@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double epsi = 1.0;
+    
+    while(true)
+    {
+        epsi = epsi / 10;
+        if(1+epsi>1)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    cout<<epsi;
+}
