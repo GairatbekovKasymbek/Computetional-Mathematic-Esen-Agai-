@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double machine_zero = 1.0;
+    int num = 0;
+    
+    while(true)
+    {
+        machine_zero = machine_zero / 10;
+        num++;
+        
+        if(2 * machine_zero > machine_zero)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    cout<<num;
+}
