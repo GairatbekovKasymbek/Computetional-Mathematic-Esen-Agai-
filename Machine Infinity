@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double machine_infinity = 1.0f;
+    int num = 0;
+    
+    while(true)
+    {
+        machine_infinity = machine_infinity * 2.0f;
+        num++;
+        
+        if(2 * machine_infinity > machine_infinity)
+        {
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    cout<<num;
+}
